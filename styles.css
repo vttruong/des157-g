@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: black;
+  width: 800px;
+  margin: auto;
+}
+
+/******************* header *******************/
+
+#mySketch {
+  margin: auto;
+  width: 800px;
+  height: 250px;
+  background-color: #143756;
+}
+
+header>h1 {
+  font-size: 250%;
+  font-weight: 500;
+  position: relative;
+  border-bottom: 2px solid gold;
+  width: 800px;
+}
+
+/******************* main content *******************/
+
+main {
+  width: 700px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+li {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+ul li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+ol li {
+  list-style-type: none;
+  padding-top: 10px;
+}
+
+li a {
+  text-decoration: none;
+  position: absolute;
+  color: #000000;
+}
+
+li a:hover {
+  color: #003663;
+  text-decoration: underline;
+}
+
+/******************* footer *******************/
+
+footer {
+  clear: both;
+  position: fixed;
+  /*margin: auto;*/
+  width: 800px;
+  bottom: 0;
+  padding: 10px;
+  background-color: #143756;
+  text-align: center;
+}
+
+footer a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: gold;
+}
