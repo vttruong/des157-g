@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 * {
   box-sizing: border-box;
@@ -12,6 +13,7 @@ body {
   color: black;
   width: 800px;
   margin: auto;
+  margin-bottom: 80px;
 }
 
 /******************* header *******************/
@@ -45,6 +47,23 @@ h2 {
   font-weight: 500;
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  padding: 15px 0 10px 0;
+  line-height: 20px;
+  display: block;
+  margin: auto;
+  color: black;
+
+}
+
 li {
   font-size: 16px;
   font-weight: 400;
@@ -71,12 +90,23 @@ li a:hover {
   text-decoration: underline;
 }
 
+#sources a {
+  display: block;
+}
+/******************* images *******************/
+img {
+  display: block;
+  margin: auto;
+  padding: 30px 0 30px 0;
+}
+
+
+
 /******************* footer *******************/
 
 footer {
   clear: both;
   position: fixed;
-  /*margin: auto;*/
   width: 800px;
   bottom: 0;
   padding: 10px;
@@ -93,4 +123,9 @@ footer a {
 
 footer a:hover {
   color: gold;
+}
+
+footer.development {
+  clear: both;
+  position: fixed;
 }
