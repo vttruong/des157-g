@@ -11,7 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #ffffff;
   color: black;
-  width: 800px;
+  /* width: 800px; */
   margin: auto;
   margin-bottom: 80px;
 }
@@ -25,18 +25,27 @@ body {
   background-color: #143756;
 }
 
+header {
+  width: 800px;
+  display: block;
+  margin: auto;
+
+}
+
 header>h1 {
+  /* width: 800px; */
   font-size: 250%;
   font-weight: 500;
   position: relative;
   border-bottom: 2px solid gold;
-  width: 800px;
 }
 
 /******************* main content *******************/
 
 main {
   width: 700px;
+  display: block;
+  margin: auto;
   display: flex;
   flex: 1;
   justify-content: space-between;
@@ -54,6 +63,7 @@ h3 {
 }
 
 p {
+  width: 700px;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   padding: 15px 0 10px 0;
@@ -90,6 +100,11 @@ li a:hover {
   text-decoration: underline;
 }
 
+#sources {
+  width: 700px;
+  margin: auto;
+}
+
 #sources a {
   display: block;
 }
@@ -104,7 +119,8 @@ img {
 
 /******************* footer *******************/
 
-footer {
+/* previously used centered footer  */
+/* footer {
   clear: both;
   position: fixed;
   width: 800px;
@@ -112,6 +128,19 @@ footer {
   padding: 10px;
   background-color: #143756;
   text-align: center;
+} */
+
+footer{
+font-size: 12px;
+ background-color: #143756;
+ bottom: 0;
+ clear: both;
+ width: 100%;
+ text-align: center;
+ padding-bottom: 15px;
+ padding-top: 15px;
+ position: fixed;
+ color: white;
 }
 
 footer a {

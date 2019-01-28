@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Rubik, sans-serif;
+}
+
+body {
+  font-size: 100%;
+  color: black;
+  background: white;
+}
+
+h1 {
+  min-width: 400px; /* prevents text from breaking */
+  margin-bottom: -0.1em;
+  margin-left: 80px;
+  font-family: Rubik, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: #6b3d1a;
+}
+
+h2 {
+  min-width: 400px; /* prevents text from breaking */
+  margin-bottom: -0.5em;
+  margin-left: 80px;
+  font-family: Rubik, sans-serif;
+  font-size: 1.2em;
+  font-weight: 400;
+  color: #1a6b52;
+}
+
+form {
+  width: 40%;
+  min-width: 650px;
+  margin-left: 40px;
+  padding: 1.5em;
+  font-size: 1.1em;
+}
+
+fieldset {
+  display: grid;
+  width: 35%;
+  grid-template-columns: 1fr 2fr;
+  border: 0; /*remove default */
+}
+
+fieldset > label {
+  text-align: left;
+  padding-bottom: 0.1em;
+  font-size: 0.9em;
+}
+
+/* div label {
+  display: inline-block;
+  margin-bottom: 1em;
+} */
+
+input[type="text"],
+textarea {
+  width: 90%;
+  border-radius: 4px;
+  background-color: #e3efec;
+  border: 0px;
+  font-weight: 400;
+}
+
+input[type="text"],
+textarea,
+select {
+  padding: 4%;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  width: auto;
+  padding: 10px;
+  border: 0px;
+  border-radius: 4px;
+  margin-right: 2%;
+  margin-bottom: 10%;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  background: #1a6b52;
+  color: white;
+
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background: #6b3d1a;
+  color: white;
+}
+
+#msgSection {
+  width: 30%;
+  min-width: 200px;
+  margin-top:auto;
+  margin-left: 80px;
+  margin-bottom: 80px;
+  padding: 2em;
+  border-radius: 10px;
+  background-color: #6b3d1a;
+  color: white;
+  display: block;
+}
+/*
+.hide {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+.show {
+  opacity: 1;
+  transition: opacity 2s;
+} */
+
+footer{
+font-size: 12px;
+ font-family: Rubik, sans-serif;
+ background-color: #143756;
+ bottom: 0;
+ clear: both;
+ width: 100%;
+ text-align: center;
+ padding-bottom: 15px;
+ padding-top: 15px;
+ position: fixed;
+ color: white;
+}
+
+footer a {
+  font-size: 14px;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: gold;
+}
