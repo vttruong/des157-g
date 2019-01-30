@@ -1,9 +1,12 @@
 console.log('reading js');
 'use strict';
 
-document.querySelector('#s').addEventListener('click', processForm);
+/*capture the submit event with an event listener for onclick and a callback function of processForm
+*/
+document.querySelector('#s').addEventListener('submit', processForm);
 document.querySelector('#r').addEventListener('click', resetForm);
 
+//define function processForm
 function processForm(evt) {
 
   //capture html for inputs
@@ -27,10 +30,20 @@ function processForm(evt) {
 
   //capture myMsg
   var myMsg = document.querySelector('#myMsg');
+  var msgSection = document.querySelector('#msgSection');
 
-  myMsg.innerHTML = 'Hello, I like ' + noun1 + num1 + noun2 + adj1 + num2 + noun3 + adj2 + noun4
-  + num3;
 
+  //message concantenation using inner.HTML
+  myMsg.innerHTML = 'Every morning, I like to start my day with some coffee to wake myself up.' + ' I usually get one ' + noun1 + ' of coffee with ' + num1 + ' pumps of ' + noun2 + ' syrup, one shot of ' + adj1 + ' syrup ' + ', ' + num2 + ' sprinkle of ' + noun3 + ', a splash of ' + adj2 + ' ' + noun4 + ', and ' +
+    num3 + ' drizzle of mocha on top.';
+
+  msgSection.className = 'show';
+
+// prevents the page from reloading (default behavior)
   evt.preventDefault();
+  return false;
+}
 
+function resetForm() {
+msgSection.className = 'hide';
 }
