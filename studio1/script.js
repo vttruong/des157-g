@@ -1,9 +1,9 @@
-console.log('reading js');
 'use strict';
+console.log('reading js');
 
 /*capture the submit event with an event listener for onclick and a callback function of processForm
 */
-document.querySelector('#s').addEventListener('submit', processForm);
+document.querySelector('#s').addEventListener('click', processForm);
 document.querySelector('#r').addEventListener('click', resetForm);
 
 //define function processForm
@@ -30,20 +30,21 @@ function processForm(evt) {
 
   //capture myMsg
   var myMsg = document.querySelector('#myMsg');
-  var msgSection = document.querySelector('#msgSection');
+  // var msgSection = document.querySelector('#msgSection');
 
 
   //message concantenation using inner.HTML
   myMsg.innerHTML = 'Every morning, I like to start my day with some coffee to wake myself up.' + ' I usually get one ' + noun1 + ' of coffee with ' + num1 + ' pumps of ' + noun2 + ' syrup, one shot of ' + adj1 + ' syrup ' + ', ' + num2 + ' sprinkle of ' + noun3 + ', a splash of ' + adj2 + ' ' + noun4 + ', and ' +
     num3 + ' drizzle of mocha on top.';
 
-  msgSection.className = 'show';
+  // msgSection.className = 'show';
 
 // prevents the page from reloading (default behavior)
   evt.preventDefault();
-  return false;
+  // return false;
 }
 
 function resetForm() {
 msgSection.className = 'hide';
+myMsg.innerHTML = 'your order';
 }
