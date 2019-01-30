@@ -30,15 +30,14 @@ function processForm(evt) {
 
   //capture myMsg
   var myMsg = document.querySelector('#myMsg');
-  // var msgSection = document.querySelector('#msgSection');
+  var msgSection = document.querySelector('#msgSection');
 
 
   //message concantenation using inner.HTML
   myMsg.innerHTML = 'Every morning, I like to start my day with some coffee to wake myself up.' + ' I usually get one ' + noun1 + ' of coffee with ' + num1 + ' pumps of ' + noun2 + ' syrup, one shot of ' + adj1 + ' syrup ' + ', ' + num2 + ' sprinkle of ' + noun3 + ', a splash of ' + adj2 + ' ' + noun4 + ', and ' +
     num3 + ' drizzle of mocha on top.';
 
-  //.show does not work
-  // msgSection.className = 'show';
+  msgSection.className = 'show';
 
 // prevents the page from reloading (default behavior)
   evt.preventDefault();
@@ -46,5 +45,5 @@ function processForm(evt) {
 
 function resetForm() {
 msgSection.className = 'hide';
-myMsg.innerHTML = 'your order';
+// myMsg.innerHTML = 'your order';
 }
