@@ -80,20 +80,21 @@ li {
 }
 
 ul li {
-  list-style-type: none;
+  /* list-style-type: none; */
   padding-top: 10px;
+  line-height: 20px;
 }
 
 ol li {
-  list-style-type: none;
+  /* list-style-type: none; */
   padding-top: 10px;
+  line-height: 20px;
 }
 
 li a {
   text-decoration: none;
   position: absolute;
   color: #000000;
-  line-height: 1.5em;
 }
 
 li a:hover {
