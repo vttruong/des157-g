@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #ffffff;
+  color: black;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 80px;
+}
+
+
+/******************* footer *******************/
+
+footer{
+font-size: 12px;
+ bottom: 0;
+ clear: both;
+ width: 100%;
+ text-align: center;
+ padding-bottom: 15px;
+ padding-top: 15px;
+ position: fixed;
+ color: #143756;
+ margin-top: 20px;
+}
+
+footer a {
+  font-size: 14px;
+  color: #143756;
+  text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: gold;
+}
+
+footer.development {
+  clear: both;
+  position: fixed;
+}
+
+
+/******************* Media Query *******************/
+
+@media only screen and (min-width: 769px) {
+body {
+  display: block;
+  margin: auto;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: auto;
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ed5d53;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #ed5d53;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5em;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #ed5d53;
+}
+
+p {
+  line-height: 1.2em;
+  font-size: 1em;
+  padding-bottom: 20px;
+}
+
+}
