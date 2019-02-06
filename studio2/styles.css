@@ -13,12 +13,12 @@ body {
   width: 80%;
   display: block;
   margin: auto;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
 }
 
 img {
-  width: 200px;
-  height: 200px;
+  width: 45%;
+  height: 45%;
   display: block;
   margin: auto;
 }
@@ -28,8 +28,12 @@ img:hover {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   color: #ed5d53;
+  margin: 0;
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 h2 {
@@ -47,30 +51,94 @@ h3 {
 }
 
 p {
-  line-height: 1.2em;
-  font-size: 1em;
+  line-height: 1.4em;
+  font-size: 0.8em;
   padding-bottom: 20px;
+  display: block;
+  margin: auto;
 }
 
+#bottleOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: #ffe1d8;
+  color: black;
+  display: none;
+  padding: 1.5em;
+}
+
+#bottleClose {
+  position: absolute;
+  top: -1em;
+  right: -0.5em;
+  color: #ed5d53;
+  font-size: 2em;
+}
+
+#computerOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: #ffe1d8;
+  color: black;
+  display: none;
+  padding: 1.5em;
+}
+
+#computerClose {
+  position: absolute;
+  top: -1em;
+  right: -0.5em;
+  color: #ed5d53;
+  font-size: 2em;
+}
+
+#mouseOverlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  background-color: #ffe1d8;
+  color: black;
+  display: none;
+  padding: 1.5em;
+}
+
+#mouseClose {
+  position: absolute;
+  top: -1em;
+  right: -0.5em;
+  color: #ed5d53;
+  font-size: 2em;
+}
 
 /******************* footer *******************/
 
-footer{
-font-size: 12px;
- bottom: 0;
- clear: both;
- width: 100%;
- text-align: center;
- padding-bottom: 15px;
- padding-top: 15px;
- position: fixed;
- color: #143756;
- margin-top: 20px;
+footer {
+  font-size: 12px;
+  bottom: 0;
+  clear: both;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  position: fixed;
+  color: #ed5d53;
+  margin-top: 20px;
 }
 
 footer a {
   font-size: 14px;
-  color: #143756;
+  color: #ed5d53;
   text-decoration: none;
   padding: 10px;
 }
@@ -84,10 +152,18 @@ footer.development {
   position: fixed;
 }
 
-
 /******************* Media Query *******************/
-
 @media only screen and (min-width: 769px) {
 
+  main {
+    width:70%;
+    margin-top: 5em;
 
+  }
+
+  section {
+    display: flex;
+    flex: 1;
+    padding: 10px;
+  }
 }
