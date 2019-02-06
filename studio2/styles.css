@@ -25,10 +25,13 @@ img {
   height: 45%;
   display: block;
   margin: auto;
+  background-color: #fff5e0;
+  margin-bottom: 1em;
 }
 
 img:hover {
-  opacity: 0.5;
+  opacity: 0.7;
+  background-color: #ffe1d8;
 }
 
 h1 {
@@ -73,6 +76,8 @@ p {
   color: black;
   display: none;
   padding: 1.5em;
+  border: solid #ed5d53 2px;
+  border-radius: 20px;
 }
 
 #bottleClose {
@@ -94,6 +99,8 @@ p {
   color: black;
   display: none;
   padding: 1.5em;
+  border: solid #ed5d53 2px;
+  border-radius: 20px;
 }
 
 #computerClose {
@@ -115,6 +122,8 @@ p {
   color: black;
   display: none;
   padding: 1.5em;
+  border: solid #ed5d53 2px;
+  border-radius: 20px;
 }
 
 #mouseClose {
@@ -126,18 +135,14 @@ p {
 }
 
 /******************* footer *******************/
-
 footer {
-  font-size: 12px;
+  font-size: 1em;
   bottom: 0;
   clear: both;
-  width: 100%;
-  text-align: center;
   padding-bottom: 15px;
   padding-top: 15px;
   position: fixed;
   color: #ed5d53;
-  margin-top: 20px;
 }
 
 footer a {
@@ -158,17 +163,43 @@ footer.development {
 
 /******************* Media Query *******************/
 @media only screen and (min-width: 769px) {
-
   body {
-    width: 70%;
+    width: 75%;
   }
 
   main {
-    width:70%;
-    margin-top: 3em;
+    width: 70%;
+    margin-top: 4%;
     display: flex;
     flex: 1;
-    padding: 10px;
   }
 
+  img {
+    margin-right: 4%;
+  }
+
+  img:last-child {
+    margin: 0;
+  }
+
+  footer {
+    width: 400px;
+    margin-left:45%;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+ #bottleOverlay {
+   top: 60%;
+ }
+
+ #computerOverlay {
+   top: 60%;
+ }
+
+ #mouseOverlay {
+   top: 60%;
+ }
 }
