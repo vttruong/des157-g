@@ -16,6 +16,10 @@ body {
   /* margin-bottom: 80px; */
 }
 
+main {
+  margin-top: 2em;
+}
+
 img {
   width: 45%;
   height: 45%;
@@ -25,6 +29,7 @@ img {
 
 img:hover {
   opacity: 0.5;
+  animation: wiggle 0.5s;
 }
 
 h1 {
@@ -157,13 +162,10 @@ footer.development {
 
   main {
     width:70%;
-    margin-top: 5em;
-
-  }
-
-  section {
+    margin-top: 3em;
     display: flex;
     flex: 1;
     padding: 10px;
   }
+
 }
