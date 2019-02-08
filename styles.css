@@ -43,7 +43,7 @@ header>h1 {
 /******************* main content *******************/
 
 main {
-  width: 700px;
+  width: 800px;
   display: block;
   margin: auto;
   display: flex;
@@ -80,15 +80,17 @@ li {
 }
 
 ul li {
-  /* list-style-type: none; */
+  list-style-type: none;
   padding-top: 10px;
   line-height: 20px;
+  padding-bottom: 1em;
 }
 
 ol li {
-  /* list-style-type: none; */
+  list-style-type: none;
   padding-top: 10px;
   line-height: 20px;
+  padding-bottom: 1em;
 }
 
 li a {
