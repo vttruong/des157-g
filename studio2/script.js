@@ -6,8 +6,16 @@ var bottle = document.querySelector('#bottle');
 var computer = document.querySelector('#computer');
 var mouse = document.querySelector('#mouse');
 
-var overlay = document.querySelector('.overlay');
-var close = document.querySelector('.close');
+
+var bottleOverlay = document.querySelector('#bottleOverlay');
+var computerOverlay = document.querySelector('#computerOverlay');
+var mouseOverlay = document.querySelector('#mouseOverlay');
+
+
+var bottleClose = document.querySelector('#bottleClose');
+var computerClose = document.querySelector('#computerClose');
+var mouseClose = document.querySelector('#mouseClose');
+
 
 // using anon functions to do overlays
 bottle.addEventListener('click', function() {
