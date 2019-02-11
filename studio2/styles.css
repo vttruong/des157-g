@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500');
 
+header {
+  width: 100%;
+  padding-top: 60%;
+  background: url(images/header2.png);
+  background-size: cover;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -143,6 +150,7 @@ footer {
   padding-top: 15px;
   position: fixed;
   color: #ed5d53;
+  right: 1em;
 }
 
 footer a {
@@ -163,8 +171,18 @@ footer.development {
 
 /******************* Media Query *******************/
 @media only screen and (min-width: 769px) {
+
+  header {
+      width: 100%;
+      padding-top: 35%;
+      margin-top: 20px;
+      background: url(images/header1.png);
+      background-size: cover;
+      border: none;
+    }
+
   body {
-    width: 75%;
+    width: 70%;
   }
 
   main {
@@ -176,6 +194,7 @@ footer.development {
 
   img {
     margin-right: 4%;
+    margin-bottom: 0;
   }
 
   img:last-child {
@@ -183,8 +202,7 @@ footer.development {
   }
 
   footer {
-    width: 400px;
-    margin-left:45%;
+   right: 0.5em;
   }
 
   h1 {
