@@ -112,28 +112,22 @@ li a:hover {
 #sources a {
   display: block;
 }
+
+#wrapper {
+  width: 800px;
+  display: block;
+  margin: auto;
+}
 /******************* images *******************/
 img {
   display: block;
   margin: auto;
-  padding: 30px 0 30px 0;
+  /* padding: 30px 0 30px 0; */
 }
 
 
 
 /******************* footer *******************/
-
-/* previously used centered footer  */
-/* footer {
-  clear: both;
-  position: fixed;
-  width: 800px;
-  bottom: 0;
-  padding: 10px;
-  background-color: #143756;
-  text-align: center;
-} */
-
 footer{
 font-size: 12px;
  background-color: #143756;
