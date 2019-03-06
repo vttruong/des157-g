@@ -60,6 +60,7 @@ h3 {
   font-size: 16px;
   font-weight: 500;
   padding-top: 10px;
+  padding-left: 25px;
 }
 
 p {
@@ -117,6 +118,17 @@ li a:hover {
   width: 800px;
   display: block;
   margin: auto;
+}
+
+
+
+#wrapper>h2 {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+
+#wrapper>h2:first-of-type {
+  padding-top: 0;
 }
 /******************* images *******************/
 img {
