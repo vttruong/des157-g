@@ -244,6 +244,35 @@ input[type="submit"]:hover {
 }
 
 /****** Footer ******/
+#resourceswrapper {
+  margin-top: 50px;
+  width: 450px;
+}
+
+#resources article {
+  margin-left: 30px;
+  line-height: 0.5em;
+  padding-bottom: 15px;
+}
+
+h4 {
+  font-family: 'Open Sans';
+  font-size: 1.1em;
+  color: #315F72;
+}
+
+#resources article a {
+  margin: 0;
+  padding: 0;
+  color: #315F72;
+}
+
+#resources article a:hover {
+  text-decoration: underline;
+
+}
+
+/****** Footer ******/
 footer {
   font-size: 12px;
   bottom: 0;
