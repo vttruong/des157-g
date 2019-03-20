@@ -85,16 +85,16 @@ function saveMessage(major, age, story){
 }
 
 
-var firstVisit = localStorage.setItem('firstVisit');
+var firstVisit = localStorage.setItem('firstVisit', 'false');
 
 if (firstVisit) {
-  localStorage.getItem('firstVisit', true);
+  localStorage.getItem('firstVisit' == true);
   document.getElementById("start").onclick = function () {
-      location.href = "#about";
+      window.location.href = "#about";
   }
 } else {
-  localStorage.getItem('firstVisit', false);
+  localStorage.getItem('firstVisit' == false);
   document.getElementById("start").onclick = function () {
-      location.href = "#explore";
+      window.location.href = "#explore";
     }
 }
