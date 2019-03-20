@@ -84,17 +84,17 @@ function saveMessage(major, age, story){
   });
 }
 
+var firstVisit = localStorage.getItem('firstVisit');
 
-var firstVisit = localStorage.setItem('firstVisit', 'false');
-
-if (firstVisit) {
-  localStorage.getItem('firstVisit' == true);
-  document.getElementById("start").onclick = function () {
-      window.location.href = "#about";
-  }
-} else {
-  localStorage.getItem('firstVisit' == false);
-  document.getElementById("start").onclick = function () {
-      window.location.href = "#explore";
-    }
+if (firstVisit === true) {
+  localStorage.setItem('firstVisit');
+  document.getElementById('start').addEventListener('click', goAbout);
+  function goAbout() {
+    window.location.href = "https://vttruong.github.io/des157-g/process/development/final/index.html#about"; }
+  }  else {
+    document.getElementById('start').addEventListener('click', goExplore);
+    function goExplore() {
+    window.location.href = "https://vttruong.github.io/des157-g/process/development/final/index.html#explore"; }
 }
+
+console.log(firstVisit);
