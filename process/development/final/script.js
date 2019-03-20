@@ -91,8 +91,8 @@ if (firstVisit) {
   localStorage.setItem('firstVisit', true);
   document.getElementById("start").onclick = function () {
       location.href = "#about";
-    }
-} else if (firstVisit) {
+  }
+}else {
   localStorage.setItem('firstVisit', false);
   document.getElementById("start").onclick = function () {
       location.href = "#explore";
