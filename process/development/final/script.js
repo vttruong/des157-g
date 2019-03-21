@@ -1,6 +1,10 @@
 'use strict';
 console.log('reading js');
 
+var exploreWindow = document.querySelector('#exploreWindow');
+var overlay = document.querySelector('#overlay');
+var p = document.querySelector('#overlay p');
+var close = document.querySelector('#close');
 
 // Initialize Firebase
 var config = {
@@ -14,29 +18,6 @@ var config = {
 
   firebase.initializeApp(config);
 
-  var database = firebase.database();
-
-  var ref = database.ref('messages')
-  ref.on('value', gotData, errData);
-
-  function gotData(data) {
-    // console.log(data.val());
-    var messages = data.val();
-    var keys = Object.keys(messages);
-    console.log(keys);
-    for (var i = 0; i < keys.length; i++) {
-      var k = keys[i];
-      var major = messages[k].major;
-      var age = messages[k].age;
-      var story = messages[k].story;
-      // console.log(major, age, story);
-    }
-  }
-
-  function errData(err) {
-    console.log('Error!');
-    console.log(err);
-  }
 
 //Reference messages collection
 var messagesRef = firebase.database().ref('messages');
@@ -84,17 +65,66 @@ function saveMessage(major, age, story){
   });
 }
 
+//retrieve data from firebase
+var database = firebase.database();
+
+var ref = database.ref('messages');
+ref.on('value', gotData, errData);
+
+function gotData(data) {
+
+  //put into array
+  var messages = data.val();
+  var keys = Object.keys(messages);
+  console.log(keys);
+  for (var i = 0; i < keys.length; i++) {
+    var k = keys[i];
+    var major = messages[k].major;
+    var age = messages[k].age;
+    var story = messages[k].story;
+    console.log(major, age, story);
+
+    //display data
+    exploreWindow.addEventListener('click', function(){
+      overlay.style.display ='block';
+      p.innerHTML = major + ' ,' + age  + '  -  '  + story ;
+    });
+
+    close.addEventListener('click', function() {
+        overlay.style.display = "none";
+    })
+  }
+}
+
+function errData(err) {
+  console.log('Error!');
+  console.log(err);
+}
+
+//display data
+// exploreWindow.addEventListener('click', function(){
+//   overlay.style.display ='block';
+//   p.innerHTML = major + ' ,' + age + '/u2014' + story ;
+// });
+//
+// close.addEventListener('click', function() {
+//     overlay.style.display = "none";
+// })
+
+
+
+
+
+//first time visit
 var firstVisit = localStorage.getItem('firstVisit');
 
 if (firstVisit === true) {
   localStorage.setItem('firstVisit');
-  document.getElementById('start').addEventListener('click', goAbout);
-  function goAbout() {
-    window.location.href = "https://vttruong.github.io/des157-g/process/development/final/index.html#about"; }
+  document.getElementById('start').onclick = function() {
+    window.location.href = './index.html#resources';
+};
   }  else {
-    document.getElementById('start').addEventListener('click', goExplore);
-    function goExplore() {
-    window.location.href = "https://vttruong.github.io/des157-g/process/development/final/index.html#explore"; }
+    document.getElementById('start').onclick = function() {
+      window.location.href = './index.html#explore';
+  };
 }
-
-console.log(firstVisit);
